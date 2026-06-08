@@ -1,11 +1,8 @@
-# Vic Sokolov
-
-**Engineering Leadership • Operational Excellence • SRE • DevOps**
-
 [Email](mailto:vic.sokolov.it@gmail.com) [LinkedIn](https://www.linkedin.com/in/vic-sokolov/)
 
 # Building reliable systems at global scale.
-## Former Amazon Search engineer and technical leader specializing in Operational Excellence, Distributed Systems, Site Reliability Engineering, DevOps.
+
+Former Amazon Search engineer and technical leader specializing in Operational Excellence, Distributed Systems, Site Reliability Engineering, DevOps.
 
 I help organizations build reliable, scalable platforms while developing strong engineering teams with operational excellence. My background spans large-scale distributed systems, performance engineering, incident management, capacity planning.
 
