@@ -1,0 +1,223 @@
+---
+---
+
+@import "{{ site.theme }}";
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8fa;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e5e7eb;
+
+  --content-width: 960px;
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --surface: #111827;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #60a5fa;
+    --border: #1e293b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.7;
+}
+
+#skip-to-content {
+  position: absolute;
+  left: -9999px;
+}
+
+.page-header {
+  background: transparent;
+  color: var(--text);
+  text-align: center;
+  padding: 5rem 1.5rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-name {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.project-tagline {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.main-content {
+  width: min(var(--content-width), 92vw);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.main-content > * + * {
+  margin-top: 1.5rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  max-width: 12ch;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-top: 5rem;
+}
+
+h2 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  font-size: 1.17rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+p {
+  max-width: 70ch;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: .5rem;
+}
+
+/* Hero section */
+
+.main-content h1:first-of-type {
+  display: none;
+}
+
+/* Expertise table */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1rem;
+  margin-top: 2rem;
+}
+
+thead th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+tbody td {
+  padding: 0.1rem 2rem;
+}
+
+tbody tr {
+  display: table-row;
+}
+
+/* Career section */
+
+h3 + p,
+h3 + p + ul {
+  max-width: 75ch;
+}
+
+.main-content h2 {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Contact section */
+
+#contact-me + p,
+#contact-me + p + p {
+  font-size: 1.05rem;
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer-credits {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+  table,
+  thead,
+  tbody,
+  tr,
+  td,
+  th {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    border-spacing: 0;
+  }
+
+  thead {
+    margin-bottom: 1rem;
+  }
+
+  th,
+  td {
+    margin-bottom: .75rem;
+  }
+
+}
